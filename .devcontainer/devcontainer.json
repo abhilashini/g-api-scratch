@@ -1,0 +1,6 @@
+{
+  "name": "Your Codespace",
+  "secrets": {
+    "GEMINI_API_KEY": {}
+  }
+}
