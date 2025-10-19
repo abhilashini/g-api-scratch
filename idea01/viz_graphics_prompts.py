@@ -9,7 +9,7 @@ class GraphicScorePrompts:
 	"""
 
 	# Placeholder for musical data reference (replace with actual data string when using)
-	json_string = "JSON_DATA_STRING_FOR_MAPPING"
+	json_string = "JSON_DATA_STRING_FOR_MAPPING" 
  
 	chromatic_landscape = f"""
 A **precise, cinematic 3D generative landscape visualization** of music. The terrain undulates organically, resembling a majestic **mountain range sculpted from sound waves**.
@@ -77,20 +77,23 @@ Each line must maintain a **consistent texture type** as specified (e.g., line i
 	**Aesthetic:** The final image must be rendered with a **consistent, fixed perspective and lighting scheme** to ensure identical musical data yields nearly identical visual output, emphasizing **data fidelity**. Refer {json_string} for quantitative mapping rules.
 	"""
  
+	# UPDATED: Musician removed, focus on light trail structure and notation overlay
 	light_painting_dynamic_score = f"""
-A **dark, cinematic photo composition** featuring a musician (e.g., a violinist or cellist) playing in a completely dark studio, creating a **vibrant, dynamic light painting** that visualizes the music being played.
+A **dark, cinematic photo composition** featuring a **vibrant, dynamic light painting** that visualizes the music being played, set against a deep black background. The **musician is absent**; only the instrument (if available in data) or the abstract light trails should be visible.
 
-**Visual Elements and Mappings:**
-- **The Light Paths (Melody/Gesture):** The core of the image is the **trail of light** emitted from the instrument's bow or movement. The **shape of this light path** directly follows the **melodic contour and expression** (e.g., smooth, sweeping waves for legato; sharp, jagged peaks for staccato/accents).
-- **Light Source and Emission:** The light should appear to **emanate directly from the instrument or the action of the musician**, giving the impression that the sound itself is glowing and being visually painted in the air.
-- **Light Color:** The **color of the light** encodes a specific musical parameter, ideally **pitch class or instrument/timbre**. Use a **chromatic color map** (e.g., blue for low register, red for mid, purple for high) or distinct colors for different instrument parts.
-- **Light Intensity and Thickness:** The **brightness, thickness, and trailing length of the light trails** encode **dynamics and sustain**. Thicker, intensely bright trails represent loud, *forte* passages or sustained notes. Fainter, thinner trails represent quiet, *piano* sounds or staccato notes.
+**Visual Elements and Mappings (Strictly Deterministic):**
+- **The Light Paths (Melody/Gesture):** The core of the image is the **trail of light** that visually maps the sound. The light path is structured as a **series of clear, defined vertical wave segments** that progress horizontally from left to right.
+- **Vertical Wavelength (Pitch Contour):** The **vertical curve or zigzag pattern within each segment** must be **strictly mapped to the melodic contour (pitch changes)**. Rapid pitch changes create a tighter, more jagged vertical wave.
+- **Segment Height (Pitch Register):** The **absolute vertical height** of the light path segment relative to the central line **must be proportional to the average pitch register**.
+- **Segment Width (Duration):** The **horizontal width** of each vertical wave segment is **strictly proportional to the note's duration**. Longer notes create wider segments.
+- **Light Color:** The **color of the light** encodes a specific musical parameter, preferably **pitch class or instrument/timbre** using a **fixed, consistent color palette**.
+- **Light Intensity and Thickness:** The **brightness and thickness of the light trails** encode **dynamics and sustain**. Thicker, intensely bright trails represent loud, *forte* passages.
 
 **Integration of Notation (Contextual Anchor):**
-- **Superimposed Sheet Music:** A **clear, traditional sheet music staff** corresponding to the visualized passage must be **subtly superimposed** beneath or directly within the light painting area. This provides a visual **anchor for pitch and rhythm** against the abstract light forms. The staff itself should be rendered in a soft, non-distracting color (e.g., deep grey or faint white lines).
+- **Superimposed Sheet Music:** A **clear, traditional sheet music staff** corresponding to the visualized passage must be **subtly superimposed and aligned beneath the light painting area**. This provides a visual **anchor for pitch and rhythm**. The staff should be rendered in a soft, non-distracting color (e.g., deep grey or faint white lines). The alignment between the light segment's horizontal position and the notation must be **strictly linear**.
 
 **Aesthetic:**
-The final image should be a **high-contrast, long-exposure photograph** with a **dramatic, professional look**. The light trails must be **clean, luminous, and sharp**, contrasting vividly with the deep black background. The overall effect is a powerful, dynamic fusion of the abstract sound wave and its precise musical notation.
+The final image should be a **high-contrast, long-exposure photograph style** with a **dramatic, professional look**. The light trails must be **clean, luminous, and sharp**, contrasting vividly with the deep black background. The overall effect is a powerful, dynamic fusion of the abstract sound wave and its precise musical notation, **with no human figure**.
 Refer {json_string} for guidance on extracting melody contour, pitch classes for color mapping, dynamics for intensity, and the exact sheet music to render beneath the light trails.
 """
 
@@ -147,7 +150,7 @@ A **highly structured, abstract graphic music score** in the style of the provid
 - **Vertical Lines:** Numerous thin vertical black lines extend both **above and below the central horizontal axis**. Their **lengths vary significantly**, visually indicating duration, pitch range, or dynamic extent. These lines form the foundational "stems" for other shapes.
 - **Horizontal Lines:** Shorter horizontal lines, in either red or blue, connect vertical lines or extend from shapes, acting as connectors, markers, or structural indicators.
 - **Solid Circles ($\bullet$)**: Used in both red and blue, these represent distinct, impactful musical events. Their **size varies** (small to medium), indicating relative duration or dynamics.
-- **Solid Squares ($\blacksquare$)**: Also in red and blue, representing different types of events or articulations.
+- **Solid Squares ($\blacksquare$)**: Used in both red and blue, representing different types of events or articulations.
 - **Solid Triangles ($\blacktriangle$ / $\blacktriangledown$)**: Pointing both upwards and downwards, primarily used within dense clusters, suggesting directional gestures or specific attacks.
 - **Open Circles ($\circ$) and Open Squares ($\square$)**: These smaller, lighter shapes are predominantly used within the large "spires," indicating less emphatic or more numerous rapid events.
 
@@ -189,8 +192,7 @@ Refer {json_string} for guidance on extracting relevant musical parameters for f
 			if not name.startswith("__")
 			and name not in ("json_string", "get_prompt_list")
 		]
-
-
+  
 # Example of how to import and access a prompt:
 # from viz_graphics_prompts import GraphicScorePrompts
 # prompt_to_test = GraphicScorePrompts.constellation_score.format(json_string=my_music_data)
