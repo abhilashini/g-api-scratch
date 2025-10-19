@@ -1,0 +1,6 @@
+# Python Dependencies for Flask Backend and Gemini Pipeline
+Flask
+google-genai
+Pillow
+werkzeug
+flask-cors

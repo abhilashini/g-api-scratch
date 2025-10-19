@@ -1,6 +1,46 @@
 {
-  "name": "Your Codespace",
   "secrets": {
     "GEMINI_API_KEY": {}
-  }
+  },
+  "name": "ScoreSense Music Visualizer",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18"
+    }
+  },
+  
+  // Set PYTHONPATH to include the backend folder for modular imports
+  "containerEnv": {
+    "PYTHONPATH": "/workspaces/score-sense/backend"
+  },
+  
+  // Install dependencies: Python (Flask, Gemini) and Node (React, Tailwind, Lucide)
+  "postCreateCommand": "pip install -r requirements.txt && npm install --prefix ./frontend && echo 'Dev container setup complete!'",
+
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "python.analysis.extraPaths": [
+          "./backend"
+        ]
+      },
+      "extensions": [
+        "ms-python.python",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+
+  "forwardPorts": [5000, 3000],
+
+  "portsAttributes": {
+    "5000": { "label": "Flask API", "onAutoForward": "notify" },
+    "3000": { "label": "React Frontend", "onAutoForward": "openBrowser" }
+  },
+
+  // Start both the frontend dev server and the Flask API
+  "postStartCommand": "npm run dev --prefix ./frontend & python ./backend/app.py"
 }
