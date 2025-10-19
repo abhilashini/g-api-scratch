@@ -81,6 +81,12 @@ Include the following description in your creative interpretation for guidance:
 {description_text}
 """
 
+glyph_score = f"""
+A flat graphic visualization where each musical element is represented by geometric shapes. Circles = melody, triangles = harmony, squares = rhythm, stars = ornaments. Each shape is colored by pitch class (C=red, D=orange, etc.) and arranged horizontally by time. Include a minimal legend explaining shape and color mappings. Style it like an elegant Bauhaus-inspired infographic — balanced, geometric, clean vector design, subtle shadows and spacing. Refer {description_text} for guidance on building the visualization.
+"""
+
+styles = {"glyph": "glyph_score"}
+
 # --- MODIFIED PART STARTS HERE ---
 
 response_art_config = types.GenerateContentConfig(
@@ -89,7 +95,7 @@ response_art_config = types.GenerateContentConfig(
 
 response_art = client.models.generate_content(
     model="gemini-2.0-flash-exp-image-generation",
-    contents=[prompt_art],
+    contents=[glyph_score],
     config=response_art_config
 )
 
@@ -99,8 +105,8 @@ try:
     for part in response_art.candidates[0].content.parts:
         if part.inline_data:
             image = Image.open(BytesIO(part.inline_data.data))
-            image.save("music_visual.png")
-            print("\nGenerated abstract music visualization saved as music_visual.png")
+            image.save(f"../images/{styles["glyph"]}.png")
+            print(f"\nGenerated abstract music visualization saved as {styles["glyph"]}.png")
             break # Assuming only one image per part or first image is sufficient
     else:
         print("\nNo inline_data found in the image generation response. Image might not have been generated.")

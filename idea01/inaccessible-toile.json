@@ -1,0 +1,128 @@
+{
+  "title": "L'inaccessible étoile",
+  "composer": "Damien Poupart-Taussat",
+  "key_signature": "G Major (one sharp: F#)",
+  "time_signature": "6/8 (six eighth-note beats per measure, typically felt in two main beats of a dotted quarter note each)",
+  "initial_tempo": {
+    "description": "Andante (a moderately slow, walking pace)",
+    "bpm_approx": 72,
+    "note_value": "dotted quarter note"
+  },
+  "initial_dynamics": {
+    "level": "p",
+    "description": "piano (soft)",
+    "articulation": "legato (play smoothly, connecting the notes)"
+  },
+  "notes_sample": [
+    { "hand": "RH", "measure": 1, "beat": 1, "pitch": "G4", "duration": "dotted quarter note" },
+    { "hand": "RH", "measure": 1, "beat": 2, "pitch": "G4", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 1, "beat": 1, "pitch": "G2", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 1, "beat": 2, "pitch": "G2", "duration": "dotted quarter note" },
+
+    { "hand": "RH", "measure": 2, "beat": 1, "pitch": "B4", "duration": "dotted quarter note" },
+    { "hand": "RH", "measure": 2, "beat": 2, "pitch": "B4", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 2, "beat": 1, "pitch": "C3", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 2, "beat": 2, "pitch": "C3", "duration": "dotted quarter note" },
+
+    { "hand": "RH", "measure": 3, "beat": 1, "pitch": "D5", "duration": "dotted quarter note" },
+    { "hand": "RH", "measure": 3, "beat": 2, "pitch": "D5", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 3, "beat": 1, "pitch": "G2", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 3, "beat": 2, "pitch": "G2", "duration": "dotted quarter note" },
+
+    { "hand": "RH", "measure": 4, "beat": 1, "pitch": "G5", "duration": "dotted quarter note" },
+    { "hand": "RH", "measure": 4, "beat": 2, "pitch": "G5", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 4, "beat": 1, "pitch": "F#3", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 4, "beat": 2, "pitch": "F#3", "duration": "dotted quarter note" },
+
+    { "hand": "RH", "measure": 5, "beat": 1, "pitch": "E5", "duration": "dotted quarter note" },
+    { "hand": "RH", "measure": 5, "beat": 2, "pitch": "E5", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 5, "beat": 1, "pitch": "G2", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 5, "beat": 2, "pitch": "G2", "duration": "dotted quarter note" },
+
+    { "hand": "RH", "measure": 6, "beat": 1, "pitch": "D5", "duration": "dotted quarter note" },
+    { "hand": "RH", "measure": 6, "beat": 2, "pitch": "D5", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 6, "beat": 1, "pitch": "C3", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 6, "beat": 2, "pitch": "C3", "duration": "dotted quarter note" },
+
+    { "hand": "RH", "measure": 7, "beat": 1, "pitch": "B4", "duration": "dotted quarter note" },
+    { "hand": "RH", "measure": 7, "beat": 2, "pitch": "B4", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 7, "beat": 1, "pitch": "G2", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 7, "beat": 2, "pitch": "G2", "duration": "dotted quarter note" },
+
+    { "hand": "RH", "measure": 8, "beat": 1, "pitch": "A4", "duration": "dotted quarter note" },
+    { "hand": "RH", "measure": 8, "beat": 2, "pitch": "A4", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 8, "beat": 1, "pitch": "F#3", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 8, "beat": 2, "pitch": "F#3", "duration": "dotted quarter note" },
+
+    { "hand": "RH", "measure": 9, "beat": 1, "pitch": "G4", "duration": "dotted quarter note" },
+    { "hand": "RH", "measure": 9, "beat": 2, "pitch": "G4", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 9, "beat": 1, "pitch": "G2", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 9, "beat": 2, "pitch": "G2", "duration": "dotted quarter note" },
+
+    { "hand": "RH", "measure": 10, "beat": 1, "pitch": "B4", "duration": "dotted quarter note" },
+    { "hand": "RH", "measure": 10, "beat": 2, "pitch": "A4", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 10, "beat": 1, "pitch": "C3", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 10, "beat": 2, "pitch": "D3", "duration": "dotted quarter note" },
+
+    { "hand": "RH", "measure": 11, "beat": 1, "pitch": "G4", "duration": "dotted quarter note" },
+    { "hand": "RH", "measure": 11, "beat": 2, "pitch": "G4", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 11, "beat": 1, "pitch": "G2", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 11, "beat": 2, "pitch": "G2", "duration": "dotted quarter note" },
+
+    { "hand": "RH", "measure": 12, "beat": 1, "pitch": "F#4", "duration": "dotted quarter note" },
+    { "hand": "RH", "measure": 12, "beat": 2, "pitch": "E4", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 12, "beat": 1, "pitch": "D3", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 12, "beat": 2, "pitch": "E3", "duration": "dotted quarter note" },
+
+    { "hand": "RH", "measure": 13, "beat": 1, "pitch": "G4", "duration": "dotted quarter note" },
+    { "hand": "RH", "measure": 13, "beat": 2, "pitch": "G4", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 13, "beat": 1, "pitch": "G2", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 13, "beat": 2, "pitch": "G2", "duration": "dotted quarter note" },
+
+    { "hand": "RH", "measure": 14, "beat": 1, "pitch": "B4", "duration": "dotted quarter note" },
+    { "hand": "RH", "measure": 14, "beat": 2, "pitch": "A4", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 14, "beat": 1, "pitch": "C3", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 14, "beat": 2, "pitch": "D3", "duration": "dotted quarter note" },
+
+    { "hand": "RH", "measure": 15, "beat": 1, "pitch": "G4", "duration": "dotted quarter note" },
+    { "hand": "RH", "measure": 15, "beat": 2, "pitch": "G4", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 15, "beat": 1, "pitch": "G2", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 15, "beat": 2, "pitch": "G2", "duration": "dotted quarter note" },
+
+    { "hand": "RH", "measure": 16, "beat": 1, "pitch": "A4", "duration": "dotted quarter note" },
+    { "hand": "RH", "measure": 16, "beat": 2, "pitch": "B4", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 16, "beat": 1, "pitch": "D3", "duration": "dotted quarter note" },
+    { "hand": "LH", "measure": 16, "beat": 2, "pitch": "G2", "duration": "dotted quarter note" }
+  ],
+  "notes_overview": "Beyond the sample, the piece generally continues with the same rhythmic pattern: two dotted quarter notes per measure in each hand. The pitches evolve melodically, primarily in the right hand, with the left hand providing a harmonic bass line, often moving in steps or simple arpeggios.",
+  "tempo_changes": [
+    { "measure": 23, "description": "ritardando (rit.) - gradually slowing down" },
+    { "measure": 26, "description": "a tempo - return to the original Andante tempo" },
+    { "measure": 54, "description": "ritardando (rit.) - gradually slowing down (implied to continue to the end of the piece)" }
+  ],
+  "dynamic_changes": [
+    { "measure": 33, "level": "pp", "description": "pianissimo (very soft), indicating an even softer dynamic than the initial 'p'" }
+  ],
+  "repeating_motifs": [
+    {
+      "motif_name": "Steady Rhythmic Pulse",
+      "description": "The most consistent motif is the rhythm: almost every measure features two dotted quarter notes in each hand, creating a continuous, lilting pulse throughout the piece. This establishes a calm and flowing character.",
+      "measures": "Throughout the entire piece"
+    },
+    {
+      "motif_name": "Right Hand Melodic Pairs",
+      "description": "In many sections (e.g., Measures 1-8, 26-32), the right hand plays the same note twice within a measure (e.g., G-G, B-B), creating a simple, almost echoing melodic effect. This often ascends or descends in step-wise motion or small leaps.",
+      "measures": "Measures 1-8, 26-32, 36-42"
+    },
+    {
+      "motif_name": "Left Hand Bass Line Progression",
+      "description": "The left hand often repeats a specific bass note progression, such as G-C-G-F#. This provides a consistent harmonic foundation and reinforces the key of G major.",
+      "measures": "Measures 1-4, 5-8, 26-29, 30-33"
+    },
+    {
+      "motif_name": "Melodic Dialogue/Counterpoint",
+      "description": "Later in the piece (e.g., from Measure 9 onwards), the left hand's melody becomes more active, often moving in a similar rhythmic or melodic contour to the right hand, creating a gentle 'call and response' or interwoven texture.",
+      "measures": "Measures 9-20, 43-54"
+    }
+  ]
+}
