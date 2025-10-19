@@ -10,23 +10,7 @@ class GraphicScorePrompts:
 
 	# Placeholder for musical data reference (replace with actual data string when using)
 	json_string = "... music data structure ..."
-
-	# --- 1. The Glyph Score (Bauhaus Infographic) ---
-	glyph_score = f"""
-A **flat, minimalist infographic visualization** of music, rendered as a striking, **Bauhaus-inspired abstract composition**. The image features a clean, light grey or off-white background with a subtle grid. Musical elements are represented by **distinct geometric shapes:**
-- **Circles** (crisp, solid fill) signify **melody**.
-- **Triangles** (pointed upwards, solid fill) represent **harmony/accompaniment**.
-- **Squares** (solid fill) denote **rhythm section elements**.
-- **Stars** (small, five-pointed, slightly glowing) mark **accents or ornaments**.
-
-Each shape's **color indicates its pitch class** according to a clear, intuitive spectrum (e.g., C=vibrant red, D=bright orange, E=sunny yellow, etc.). The shapes are precisely **arranged horizontally from left to right to represent time progression**, with consistent spacing for beats and measures. Vertical alignment indicates relative pitch within its category.
-
-The entire composition is **balanced, harmonious, and highly geometric**. Use **clean vector lines, subtle drop shadows** for depth, and precise negative space.
-
-A **small, unobtrusive legend panel** is integrated, clearly showing the shape → role and color → pitch mappings. The final image should be a **polished, high-resolution visual explainer**. Refer {json_string} for guidance on building the visualization.
-"""
-
-	# --- 2. The Chromatic Landscape (3D Terrain) ---
+ 
 	chromatic_landscape = f"""
 A **breathtaking, cinematic 3D generative landscape visualization** of music. The terrain undulates organically, resembling a majestic **mountain range sculpted from sound waves**.
 - The **X-axis** is **time**.
@@ -37,22 +21,9 @@ The landscape is rendered with a **glowing wireframe effect** or a **softly shad
 
 **Dramatic, realistic lighting** casts long shadows. **Gentle, ethereal fog or mist** drifts through the lower valleys, adding depth and reflecting quiet dynamics.
 
-A **minimalist, holographic inset legend** explains the axis and color mappings. The final output is a **high-detail, immersive visual experience**. Refer {json_string} for guidance on building the visualization.
+The final output is a **high-detail, immersive visual experience**. Refer {json_string} for guidance on building the visualization.
 """
 
-	# --- 3. The Harmonic Spiral (Nautilus Shell) ---
-	harmonic_spiral = f"""
-A **mesmerizing, elegant, and futuristic circular spiral visualization** of music, aesthetically resembling a **chromatic nautilus shell or a celestial clock**.
-- The **spiral path expands gracefully outward from the center, representing time progression**.
-- The **angular position** (like a clock face) consistently **encodes pitch class**.
-- **Tonal families or harmonic centers are conveyed by a subtle, evolving color gradient** that washes over the spiral (e.g., warm golden glow for Major, cool blue for minor).
-
-**Each distinct musical thread** is represented by a **thick, luminous, glowing line** that traces its unique path. When harmonies occur, these lines converge or align radially, forming visually striking **"harmonic spokes" or "choral clusters"**.
-
-The background is a **soft, radial gradient**. The entire composition embodies **perfect symmetry, high detail, and organized complexity**. A **subtle, integrated legend** explains the mappings. Refer {json_string} for guidance on building the visualization.
-"""
-
-	# --- 4. The Constellation Score (Cosmic Map) ---
 	constellation_score = f"""
 A breathtaking **cosmic data-art visualization** transforming sheet music into an **expansive, ethereal constellation map** set against a deep, dark starry night sky.
 - **Each musical note is a glowing colored dot ('star')**.
@@ -63,39 +34,9 @@ A breathtaking **cosmic data-art visualization** transforming sheet music into a
 
 The **color of each star maps to its note family (pitch class)**. **Thin, shimmering trails of stardust** gracefully connect consecutive notes, forming clear melodic pathways. **Chords** form vibrant, momentary **star clusters**.
 
-A **neat, minimalist corner legend** indicates color → pitch, size → duration, and glow → dynamics. The final image should be **high-resolution, balanced, and emotionally evocative**. Refer {json_string} for guidance on building the visualization.
+The final image should be **high-resolution, balanced, and emotionally evocative**. Refer {json_string} for guidance on building the visualization.
 """
 
-	# --- 5. The Vocal Flowchart Score (Sequence Map) ---
-	vocal_flowchart_score = f"""
-A **clean, hand-drawn style infographic flowchart** visualizing a sequence of **abstract musical events** (derived from the original sheet music's interpretive elements). The aesthetic is highly legible and modular.
-
-The flowchart consists of **multiple oval-shaped nodes** arranged in a generally **downward sequence**, connected by **smooth, directional arrows**. Time flows along the arrows.
-
-**Node Content:** Each oval contains **concise text** describing a musical instruction or event (e.g., 'Crescendo, pizzicato strings', 'Sudden forte, brass fanfare', 'Decrescendo to silence').
-
-**Arrows (Transitions):** Arrows indicate flow. **Thicker arrows** indicate a dynamic increase or acceleration. **Thinner arrows** indicate a dynamic decrease or deceleration.
-
-**Node Styling:** The oval's **border or fill color** can be subtly used to convey overarching mood or instrument group (e.g., warm colors for assertive sections, cool colors for softer sections).
-
-The final image should be an **intuitive, narrative-driven infographic** guiding an audience through the structural and expressive journey of the piece using visual cues, colors, and a clear sequential flow. Refer {json_string} for guidance on building the visualization.
-"""
-
-	# --- 6. The Graphic Score Cadenza (Cascading Texture) ---
-	graphic_score_cadenza = f"""
-A **monochrome, hand-drawn graphic music score fragment** titled "Cadenza," resembling a dynamic, **cascading arc of notes**. The style is pen-and-ink linear drawing.
-
-The music flows as a **dense, accelerating cascade of points** that sweeps **downward and outward** in a wide, parabolic arc. It begins in the top-left with a single Bass Clef.
-
-**Data Mapping:**
-- **Notes** are represented by **small solid black circles ($bullet$)** (intense sound) and **small open circles ($circ$)** (lighter sound/harmonics).
-- The **density** of the points increases in the center, suggesting a **crescendo or thick texture**.
-- **Thin, free-flowing, looping lines** trail from the top and weave through the notes, representing **sustained gestures or glissandi**.
-
-The entire cascade resolves into a **large, low-lying, hand-drawn cloudy formation** filling the bottom, symbolizing a diffuse, sustained sonic conclusion. The overall feeling is kinetic, chaotic, and elegant. Refer {json_string} for guidance on building the visualization.
-"""
-
-	# --- 7. The Layered Graphic Score (Color-Coded Timelines) ---
 	layered_graphic_score = f"""
 A **vibrant, abstract, color-coded graphic music score** titled "Picnic," set against a subtle, light grid paper background. The score is organized into **four distinct horizontal single-line staves** labeled i, ii, iii, and iv. Time flows strictly **left to right**.
 
@@ -105,44 +46,6 @@ Musical events are depicted by **abstract, hand-painted/drawn shapes** placed ov
 - **Vertical displacement** indicates pitch contour (slope up/down).
 
 Each line has a distinct texture (e.g., sharp, angled streaks on line i; flowing, continuous patches with textured edges on line iii; low-lying repetitive shapes on line iv). The final rendering should have a **painterly quality** where the colors appear like acrylic or watercolor strokes. Refer {json_string} for guidance on building the visualization.
-"""
-
-	# --- 8. The Stochastic Texture Map (Particle Cloud) ---
-	stochastic_texture_map_score = f"""
-An **abstract graphic music score** rendered as a **stochastic particle cloud map**, full of raw energy and textured detail. The visual style is monochromatic with specific color accents, against a clean white background.
-
-The composition is dominated by a **large, irregularly shaped, diffuse cluster of black and dark grey particles**.
-- **Dense, solid black patches** form the cores, representing **loud, complex, or sustained activity**.
-- **Gradual scattering** indicates **decaying dynamics/reverberation**.
-
-**Color Bursts** signify **timbral events or energy foci**: A **central, irregular "starburst" of vibrant red and muted yellow particles** marks the main climax, with smaller bursts marking secondary events. The overall aesthetic is raw, organic, and highly textural, like a magnified view of sound particles. Refer {json_string} for guidance on building the visualization.
-"""
-
-	# --- 9. The Choreographic Score (Tutti/Soloist Diagrams) ---
-	choreographic_graphic_score = f"""
-A sophisticated, experimental graphic music score combining choreographic diagrams and textural notation. The style is clean, diagrammatic, and uses primary color blocks.
-
-**LEFT SIDE (Background Tuttimovement):** Features two stylized **color-blocked figures** overlaid with **dashed black lines and arrows** indicating specific choreographic movements, linked directly to **traditional rhythmic notation** placed below.
-
-**RIGHT SIDE (Soloist and Harmonic Texture):**
-- A **thick, sweeping, non-metrical black line** labeled "Solist" at the top defines the soloist's expressive contour.
-- **Two parallel rectangular diagrams** function as a textural score (Tone Dots). These are vertically striped with **color blocks** (yellow/green) defining a **pitch axis** ("lower" to "higher").
-- A **thick, oscillating black line** weaves dramatically through the color zones, detailing a complex, "swinging" harmonic sweep for the orchestra.
-
-The final image must be **highly graphic and diagrammatic**, using bold lines and geometric simplicity to communicate complex performance instructions. Refer {json_string} for guidance on building the visualization.
-"""
-
-	# --- 10. The Antiquarian Color-Sphere Score (Parchment Map) ---
-	antiquarian_color_sphere_score = f"""
-A visualization of a music score in the style of an **Antiquarian Color-Sphere Map**. The image must be rendered on a background that convincingly simulates **ancient, textured, and mottled parchment paper** with irregularly **frayed edges**.
-
-**Structure:** The score is arranged in **five distinct horizontal staves**.
-**Data Mapping:** The staves are filled with **colored circles of widely varying sizes**.
-- **Color** signifies **pitch or timbre** (e.g., deep green, rich red, yellow-orange).
-- **Size** signifies **duration or amplitude** (Large circles = long/loud events).
-- **Clusters** of circles indicate **chords or harmonic density**.
-
-The circles are placed over a **diffuse, granular textural field** that follows the staves. A **vertical column of color samples** on the left acts as a visual legend. The final image should feel like a newly discovered, meaningful ancient document. Refer {json_string} for guidance on building the visualization.
 """
 
 	watercolor_flow_prompt = f"""
@@ -161,9 +64,6 @@ The circles are placed over a **diffuse, granular textural field** that follows 
 
 	**Aesthetic:**
 	The rendering should possess a genuine **painterly, expressive, and high-resolution watercolor aesthetic**. Edges should be soft and bleed slightly, colors should layer transparently, and visible brush textures should be evident. The composition should feel organic and fluid, directly mirroring the emotional ebb and flow of the music.
-
-	**Legend:**
-	Include a **small, elegantly integrated artistic legend** in one corner. This legend will display **miniature brush samples** (e.g., an upward stroke, a saturated blob, a transparent wash) with concise text labels explaining their corresponding musical mappings (e.g., "Upward Stroke = Rising Pitch," "Saturated = Loud," "Transparent = Sustain").
 
 	The final image should be a beautiful fusion of abstract art and intuitive musical storytelling. Refer {json_string} for guidance on building the visualization, particularly for extracting pitch contours, dynamic changes, sustain, and key changes.
 	"""
@@ -189,8 +89,111 @@ The circles are placed over a **diffuse, granular textural field** that follows 
 	**Aesthetic:**
 	The final image should be **high-resolution, visually rich, and deeply immersive**, resembling a vibrant, fantastical landscape where the mountains and valleys are made of sound waves. It should convey the music's emotional and structural changes through the visual metaphor of a dynamic aquatic panorama.
 
-	The absence of a traditional legend is intentional, as the goal is intuitive understanding through visual metaphor, but a very minimal textual hint in a corner about "Waves = Music" is acceptable. Refer {json_string} for guidance on building the visualization, mapping pitch, dynamics, duration, timbre, and articulation to the wave properties.
+	Refer {json_string} for guidance on building the visualization, mapping pitch, dynamics, duration, timbre, and articulation to the wave properties.
 	"""
+ 
+	light_painting_dynamic_score = f"""
+A **dark, cinematic photo composition** featuring a musician (e.g., a violinist or cellist) playing in a completely dark studio, creating a **vibrant, dynamic light painting** that visualizes the music being played.
+
+**Visual Elements and Mappings:**
+- **The Light Paths (Melody/Gesture):** The core of the image is the **trail of light** emitted from the instrument's bow or movement. The **shape of this light path** directly follows the **melodic contour and expression** (e.g., smooth, sweeping waves for legato; sharp, jagged peaks for staccato/accents).
+- **Light Source and Emission:** The light should appear to **emanate directly from the instrument or the action of the musician**, giving the impression that the sound itself is glowing and being visually painted in the air.
+- **Light Color:** The **color of the light** encodes a specific musical parameter, ideally **pitch class or instrument/timbre**. Use a **chromatic color map** (e.g., blue for low register, red for mid, purple for high) or distinct colors for different instrument parts.
+- **Light Intensity and Thickness:** The **brightness, thickness, and trailing length of the light trails** encode **dynamics and sustain**. Thicker, intensely bright trails represent loud, *forte* passages or sustained notes. Fainter, thinner trails represent quiet, *piano* sounds or staccato notes.
+
+**Integration of Notation (Contextual Anchor):**
+- **Superimposed Sheet Music:** A **clear, traditional sheet music staff** corresponding to the visualized passage must be **subtly superimposed** beneath or directly within the light painting area. This provides a visual **anchor for pitch and rhythm** against the abstract light forms. The staff itself should be rendered in a soft, non-distracting color (e.g., deep grey or faint white lines).
+
+**Aesthetic:**
+The final image should be a **high-contrast, long-exposure photograph** with a **dramatic, professional look**. The light trails must be **clean, luminous, and sharp**, contrasting vividly with the deep black background. The overall effect is a powerful, dynamic fusion of the abstract sound wave and its precise musical notation.
+Refer {json_string} for guidance on extracting melody contour, pitch classes for color mapping, dynamics for intensity, and the exact sheet music to render beneath the light trails.
+"""
+
+	abstract_3d_ribbon_score = f"""
+	A **mesmerizing, high-resolution 3D abstract sculpture of sound**, visualized as a **smooth, dynamically moving, intertwined cluster of luminous tubes or ribbons**, similar to twisted cables or thick ribbons. The rendering should be **hyper-realistic and artistic**, set against a clean, neutral studio background (e.g., soft gradient grey).
+
+	**Structure and Flow:**
+	- The overall form progresses **horizontally from left to right**, representing the musical timeline.
+	- The entire structure appears to be **floating and suspended in motion**.
+
+	**Musical Parameters as Physical Form:**
+	- **Vertical Displacement (Y-axis):** The **vertical height** of the entire structure and the individual ribbons within it correspond to the **pitch register**. A high-pitched passage results in the structure floating higher; a bass line is represented lower.
+	- **Ribbon Thickness (Radius):** The **radius or thickness of the individual tubes/ribbons** encodes **dynamics/amplitude**. Thick, voluminous tubes represent loud, *forte* passages, while thin, subtle threads represent quiet, *piano* moments.
+	- **Twisting/Intertwining:** The degree to which the ribbons **twist, wrap, and intertwine around each other** signifies **harmonic complexity and polyphony**. A simple melody is a single, clean ribbon; a dense chord cluster or complex counterpoint is a tight, intricate braid or tangle of multiple tubes.
+	- **Ribbon Color/Material:** The **color and material texture** of each individual ribbon designates a **specific instrumental timbre or melodic voice**. Use distinct, aesthetically pleasing colors (e.g., cool silver for strings, warm bronze for brass, electric blue for woodwinds). The material should suggest **soft, smooth, and flexible plastic or luminous fiber**.
+
+	**Aesthetic:**
+	The final image should be rendered with **soft, diffused studio lighting** that creates subtle highlights and shadows on the material, emphasizing the smooth, volumetric nature of the tubes. The composition is **elegant, clean, and architecturally beautiful**, translating the complexity of the music into a tangible, flowing, and aesthetically pleasing 3D object.
+	Refer {json_string} for guidance on mapping pitch range, dynamics, polyphony, and instrumental timbres to the 3D structure.
+	"""
+ 
+	solar_chronometer_score_strokes = f"""
+A **vibrant, high-resolution painterly visualization** titled "Solar Chronometer Score," set against a dark, smoky background. The composition is centered on a large, glowing, roughly circular form (the "Sun").
+
+**The Core Layer (Harmony/Dynamics):**
+- The central circle is entirely filled with **thick, highly visible, layered brushstrokes of warm colors** (e.g., saturated yellow and orange).
+- The **thickness and density of these base strokes** encode the **overall dynamic level and harmonic intensity** of the piece (denser/thicker strokes for loud, harmonically rich passages). The texture should be highly tangible, like heavy impasto paint.
+
+**The Structural Layer (Instrumental Parts):**
+- Overlaying the textured background, draw **four distinct, horizontal, solid color blocks** (e.g., Red, Deep Green, Royal Purple, Pale Beige). These blocks represent four specific instrumental or vocal parts.
+- On each block, draw **simple notation symbols** (small open circles, short black lines, dots) to denote the **pitch register and basic rhythmic events** specific to that instrumental part.
+
+**The Expressive Layer (Melody/Gesture - Focus on Strokes):**
+- **Dynamic, sweeping lines** are the key visual element, representing the piece's expressive gestures and active melodies. These lines must flow **around and through the central circle** and connect the structural staves.
+- **Stroke Color:** Use **four contrasting, high-saturation colors** (e.g., electric blue, bright cyan, stark white, magenta) for these expressive lines, with each color representing a **different, prominent thematic or melodic line** (e.g., Solo Instrument 1, Solo Instrument 2, Lead Counter-melody).
+- **Stroke Length/Curve:** **Long, sweeping curves and spirals** encode sustained, broad melodic movements or expressive crescendi. **Short, sharp, angled strokes** encode fast, accented, or percussive gestures.
+- **Stroke Thickness:** The **thickness of these colored lines** varies to encode **volume/force** (thicker line = louder/more forceful gesture).
+
+**Aesthetic:**
+The final image should look like a **masterful abstract expressionist painting** with precise, geometric elements integrated. The interplay between the chaotic, thick background strokes and the clean, energetic colored lines should visually convey the emotional power and structured complexity of the music.
+Refer {json_string} for guidance on mapping instrumental lines to color, dynamic changes to stroke thickness, and pitch/duration to stroke length/curve.
+"""
+
+	geometric_micro_notation_score = f"""
+A **highly structured, abstract graphic music score** in the style of the provided reference image, resembling a **complex, two-dimensional architectural blueprint of sound**. The aesthetic is clean, precise, and minimalist, utilizing stark geometric forms and a limited color palette on a pristine white background.
+
+**Central Axis and Time Flow:**
+- The score is organized around a **dominant, thin horizontal black line** that traverses the entire width of the canvas, representing the primary **timeline**. Time flows strictly **left to right**.
+
+**Two Primary Voices/Colors:**
+- All geometric elements are rendered in one of **two distinct, contrasting solid colors**: **deep, dark red** and **dark, muted blue**. These colors represent two primary, distinct musical "voices" or layers.
+
+**Geometric Elements and Their Arrangement:**
+- **Vertical Lines:** Numerous thin vertical black lines extend both **above and below the central horizontal axis**. Their **lengths vary significantly**, visually indicating duration, pitch range, or dynamic extent. These lines form the foundational "stems" for other shapes.
+- **Horizontal Lines:** Shorter horizontal lines, in either red or blue, connect vertical lines or extend from shapes, acting as connectors, markers, or structural indicators.
+- **Solid Circles ($\bullet$)**: Used in both red and blue, these represent distinct, impactful musical events. Their **size varies** (small to medium), indicating relative duration or dynamics.
+- **Solid Squares ($\blacksquare$)**: Also in red and blue, representing different types of events or articulations.
+- **Solid Triangles ($\blacktriangle$ / $\blacktriangledown$)**: Pointing both upwards and downwards, primarily used within dense clusters, suggesting directional gestures or specific attacks.
+- **Open Circles ($\circ$) and Open Squares ($\square$)**: These smaller, lighter shapes are predominantly used within the large "spires," indicating less emphatic or more numerous rapid events.
+
+**Dense "Spires" / Clusters:**
+- The composition features **two prominent, large, symmetrical, conical (or pyramidal) clusters** of shapes, extending both **upward and downward** from the central axis. These represent sections of **intense musical density, rapid activity, or wide-ranging pitch/dynamic sweeps**.
+- These "spires" are densely packed with a mix of small solid and open circles, squares, and triangles, in both red and blue, creating a visually complex, granular texture. One spire is roughly to the left-center, the other to the right-center.
+
+**Scattered Elements:**
+- Various individual or small groups of colored geometric shapes (circles, squares, triangles) are **scattered sparsely** along the central timeline and attached to vertical lines between the main spires, representing isolated events or quieter passages.
+
+**Balance and Negative Space:**
+- The composition demonstrates a strong sense of **balance and visual rhythm**, with elements carefully placed relative to the central axis.
+- The **pristine white background** dominates, providing maximum contrast for the crisp geometric forms and emphasizing their precision.
+
+The final image should be a **high-resolution, visually striking work of minimalist information art**, conveying musical structure and texture through purely abstract, geometric means. Refer {json_string} for guidance on translating specific musical data (pitch, duration, dynamics, instrumentation for color coding, event types for shape) into this precise geometric language.
+"""
+
+	mandelbrot_music_prompt = f"""
+A **dynamic and abstract visualization of music as a Mandelbrot set (or similar fractal)**, presented as a highly detailed, generative art piece. The image transforms musical parameters into the fractal's intricate geometry and vibrant colors.
+
+**Fractal Generation Controlled by Music:**
+- **Musical Complexity (Density/Polyphony/Dynamics) → Iteration Depth:** The **overall density and intricacy of the fractal's detail** is directly proportional to the musical complexity. Periods of intense polyphony, high note density, or forte dynamics result in a deeply iterated, highly detailed fractal structure. Quieter, sparser musical sections display a simpler, less iterated, or more 'zoomed out' view of the fractal.
+- **Musical Form/Motif Development → Zoom Level:** The **zoom level into the fractal** evolves with the musical form. The piece might begin with a broad, zoomed-out view (representing the overall structure), and then gradually zoom in on specific, recurring fractal features as musical motifs are developed or repeated.
+- **Key Changes/Harmonic Tension/Mood → Color Palette/Hue Shift:** The **color scheme and hue transitions** of the fractal's escape-time coloring algorithm are driven by the music's harmonic qualities. Major keys or consonant sections use a palette of **warm, harmonious, and blending colors** (e.g., gradients of blues, greens, purples). Minor keys, dissonant passages, or moments of high harmonic tension shift to **cooler, more contrasting, or agitated color palettes** (e.g., reds, oranges, sharp yellows, or high-contrast combinations).
+- **Sectional Changes/Thematic Areas → Region of Interest:** Distinct **musical sections or thematic areas** are represented by **shifts in the rendered region of the Mandelbrot set**. The camera subtly pans or jumps to a new, recognizable location within the fractal's plane, creating visual landmarks corresponding to musical forms.
+- **Dissonance/Accents/Noise → Controlled Glitches/Distortion:** Intense dissonance, sudden accents, or percussive noise elements in the music trigger **momentary visual glitches, subtle distortions, or sudden shifts in the rendering parameters** (e.g., a brief, sharp change in the fractal's formula or coloring) to mimic the sonic impact.
+
+**Aesthetic:**
+The final image should be **high-resolution, visually complex, and mesmerizing**. It's a generative art piece where the abstract beauty of the fractal is infused with the evolving character of the music. The colors should be luminous and seamlessly blended, creating an immersive experience that reveals hidden structures upon closer 'listening.'
+Refer {json_string} for guidance on extracting relevant musical parameters for fractal control.
+"""
 
 	@classmethod
 	def get_prompt_list(cls):
