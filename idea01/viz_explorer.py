@@ -111,5 +111,5 @@ for name, prompt in GraphicScorePrompts.get_prompt_list():
 		except Exception as e:
 			print(f"ERROR: Failed to generate or save image for {name}: {e}")
 		
-		# 2f. PRINT SINGLE-BLOCK DISCLAIMER
-		print(CONSISTENCY_DISCLAIMER)
+# 2f. PRINT SINGLE-BLOCK DISCLAIMER
+print(CONSISTENCY_DISCLAIMER)
